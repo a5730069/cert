@@ -1,0 +1,121 @@
+OpenSSL> s_client -connect s3-ap-southeast-1.amazonaws.com:443 -showcerts
+CONNECTED(00000150)
+depth=1 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Baltimore CA-2 G2
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 C = US, ST = Washington, L = Seattle, O = "Amazon.com, Inc.", CN = *.s3-ap-southeast-1.amazonaws.com
+verify return:1
+---
+Certificate chain
+ 0 s:C = US, ST = Washington, L = Seattle, O = "Amazon.com, Inc.", CN = *.s3-ap-southeast-1.amazonaws.com
+   i:C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Baltimore CA-2 G2
+-----BEGIN CERTIFICATE-----
+MIIIajCCB1KgAwIBAgIQBtHDrHlHtIlDS9ld7eoGozANBgkqhkiG9w0BAQsFADBk
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSMwIQYDVQQDExpEaWdpQ2VydCBCYWx0aW1vcmUgQ0Et
+MiBHMjAeFw0xOTExMDkwMDAwMDBaFw0yMDEyMTAxMjAwMDBaMHsxCzAJBgNVBAYT
+AlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdTZWF0dGxlMRkwFwYD
+VQQKExBBbWF6b24uY29tLCBJbmMuMSowKAYDVQQDDCEqLnMzLWFwLXNvdXRoZWFz
+dC0xLmFtYXpvbmF3cy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQDWelG8WfwSSUAExpPHlBBdKq2n/Bkt6Ry2mOme1tvtk6TIkrdNxsrOiOdLmSjY
+NPFlDqaNoG2oHdYD1FLWm9bu1Gc+7Mm+Wygr2+phX7Rd/w9XgIPwAfkNC3TEC+fv
+KhGe75ejtZ1NKqMR5myl3wQdhqQCaaL2wWjNz3zq1ZievlvI/8LnFUU2DxEq7s6c
+DmKwpfdDx5cAVc8Hip3fQt6Hpa4A1n5IZDx+gCIB2Q26Jvyx/VYHpqCcyMn9hCte
+f/uEEt6EWUMHNxfhrp7YjPi1sUyQ1WEJGBOFgLu2bhxSoWKsI90OVPJFVmF3NAC1
+MzFkbzt2+j308gP8MvQ1t8WRAgMBAAGjggT/MIIE+zAfBgNVHSMEGDAWgBTAErIo
+dGhGZ+lwJXQaAEVbBn1cRDAdBgNVHQ4EFgQUmA8p4LG97Ugf6AtZMl22vzErgdYw
+ggIlBgNVHREEggIcMIICGIIfczMtYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNv
+bYIhKi5zMy1hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tgh9zMy5hcC1zb3V0
+aGVhc3QtMS5hbWF6b25hd3MuY29tgiEqLnMzLmFwLXNvdXRoZWFzdC0xLmFtYXpv
+bmF3cy5jb22CKXMzLmR1YWxzdGFjay5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3Mu
+Y29tgisqLnMzLmR1YWxzdGFjay5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29t
+ghIqLnMzLmFtYXpvbmF3cy5jb22CKSouczMtY29udHJvbC5hcC1zb3V0aGVhc3Qt
+MS5hbWF6b25hd3MuY29tgidzMy1jb250cm9sLmFwLXNvdXRoZWFzdC0xLmFtYXpv
+bmF3cy5jb22CMyouczMtY29udHJvbC5kdWFsc3RhY2suYXAtc291dGhlYXN0LTEu
+YW1hem9uYXdzLmNvbYIxczMtY29udHJvbC5kdWFsc3RhY2suYXAtc291dGhlYXN0
+LTEuYW1hem9uYXdzLmNvbYItKi5zMy1hY2Nlc3Nwb2ludC5hcC1zb3V0aGVhc3Qt
+MS5hbWF6b25hd3MuY29tgjcqLnMzLWFjY2Vzc3BvaW50LmR1YWxzdGFjay5hcC1z
+b3V0aGVhc3QtMS5hbWF6b25hd3MuY29tMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUE
+FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgYEGA1UdHwR6MHgwOqA4oDaGNGh0dHA6
+Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEJhbHRpbW9yZUNBLTJHMi5jcmww
+OqA4oDaGNGh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEJhbHRpbW9y
+ZUNBLTJHMi5jcmwwTAYDVR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcC
+ARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIweQYIKwYB
+BQUHAQEEbTBrMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20w
+QwYIKwYBBQUHMAKGN2h0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2Vy
+dEJhbHRpbW9yZUNBLTJHMi5jcnQwDAYDVR0TAQH/BAIwADCCAQQGCisGAQQB1nkC
+BAIEgfUEgfIA8AB2AKS5CZC0GFgUh7sTosxncAo8NZgE+RvfuON3zQ7IDdwQAAAB
+bk2FN00AAAQDAEcwRQIhAIVJw+I/IgJjjnp0nfebS3EbfUboKskB3CXtGCutRG4O
+AiAZuwahPCiKrfabLZywPEl6kBOnuzNHm5qFwk8ef+fkLwB2AId1v+dZfPiMQ5lf
+vfNu/1aNR1Y2/0q1YMG06v9eoIMPAAABbk2FN6kAAAQDAEcwRQIhALaFC7ndNwh/
+h5nBECUR7O2tTwQy7Fhkf2YpN0VLA/ZYAiAcWklcDG7Gk3zZ4v1rjq+TCzceom1d
+Z8J4iWdJjMiH4TANBgkqhkiG9w0BAQsFAAOCAQEAA0ullEYRLgDrJF4am1oNtO3o
+PtjtkE9dRokstqGXTvPtI44ncg6EBxdeQSpngdfUj608HslzYk5dQGVlRm7NuECa
+8YypIGPafbXKYmdQQ3eBdnK6NdfmdqcfqFcDekF47F99DwWGCowcGfFGpGcb2bBy
+txLO5u39LEoWcTPXDVitLJQx3zQGitpO3r2RKaYC8eZUIe4V5jnnl8BmlmKmDjRA
+YcOom1CF1wE+C9sb98nxJ48EVsXA/nK+Z6S+fE/8D9twDy+jhcfBi+4V8OqX1XTm
+ms0Mvn9fcLqAu14f+TYWVuwzU935ukKPjis0goaUgJxMPa//Kh5ryDTqX3rJ3Q==
+-----END CERTIFICATE-----
+ 1 s:C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Baltimore CA-2 G2
+   i:C = IE, O = Baltimore, OU = CyberTrust, CN = Baltimore CyberTrust Root
+-----BEGIN CERTIFICATE-----
+MIIEYzCCA0ugAwIBAgIQAYL4CY6i5ia5GjsnhB+5rzANBgkqhkiG9w0BAQsFADBa
+MQswCQYDVQQGEwJJRTESMBAGA1UEChMJQmFsdGltb3JlMRMwEQYDVQQLEwpDeWJl
+clRydXN0MSIwIAYDVQQDExlCYWx0aW1vcmUgQ3liZXJUcnVzdCBSb290MB4XDTE1
+MTIwODEyMDUwN1oXDTI1MDUxMDEyMDAwMFowZDELMAkGA1UEBhMCVVMxFTATBgNV
+BAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3LmRpZ2ljZXJ0LmNvbTEjMCEG
+A1UEAxMaRGlnaUNlcnQgQmFsdGltb3JlIENBLTIgRzIwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQC75wD+AAFz75uI8FwIdfBccHMf/7V6H40II/3HwRM/
+sSEGvU3M2y24hxkx3tprDcFd0lHVsF5y1PBm1ITykRhBtQkmsgOWBGmVU/oHTz6+
+hjpDK7JZtavRuvRZQHJaZ7bN5lX8CSukmLK/zKkf1L+Hj4Il/UWAqeydjPl0kM8c
++GVQr834RavIL42ONh3e6onNslLZ5QnNNnEr2sbQm8b2pFtbObYfAB8ZpPvTvgzm
++4/dDoDmpOdaxMAvcu6R84Nnyc3KzkqwIIH95HKvCRjnT0LsTSdCTQeg3dUNdfc2
+YMwmVJihiDfwg/etKVkgz7sl4dWe5vOuwQHrtQaJ4gqPAgMBAAGjggEZMIIBFTAd
+BgNVHQ4EFgQUwBKyKHRoRmfpcCV0GgBFWwZ9XEQwHwYDVR0jBBgwFoAU5Z1ZMIJH
+WMys+ghUNoZ7OrUETfAwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMC
+AYYwNAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdp
+Y2VydC5jb20wOgYDVR0fBDMwMTAvoC2gK4YpaHR0cDovL2NybDMuZGlnaWNlcnQu
+Y29tL09tbmlyb290MjAyNS5jcmwwPQYDVR0gBDYwNDAyBgRVHSAAMCowKAYIKwYB
+BQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwDQYJKoZIhvcNAQEL
+BQADggEBAC/iN2bDGs+RVe4pFPpQEL6ZjeIo8XQWB2k7RDA99blJ9Wg2/rcwjang
+B0lCY0ZStWnGm0nyGg9Xxva3vqt1jQ2iqzPkYoVDVKtjlAyjU6DqHeSmpqyVDmV4
+7DOMvpQ+2HCr6sfheM4zlbv7LFjgikCmbUHY2Nmz+S8CxRtwa+I6hXsdGLDRS5rB
+bxcQKegOw+FUllSlkZUIII1pLJ4vP1C0LuVXH6+kc9KhJLsNkP5FEx2noSnYZgvD
+0WyzT7QrhExHkOyL4kGJE7YHRndC/bseF/r/JUuOUFfrjsxOFT+xJd1BDKCcYm1v
+upcHi9nzBhDFKdT3uhaQqNBU4UtJx5g=
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=C = US, ST = Washington, L = Seattle, O = "Amazon.com, Inc.", CN = *.s3-ap-southeast-1.amazonaws.com
+
+issuer=C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Baltimore CA-2 G2
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 3797 bytes and written 459 bytes
+Verification error: unable to get local issuer certificate
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES128-GCM-SHA256
+    Session-ID: 4E98EC8A7FFDCBB1527872E096C774F1C9D425881033121889C696FEC98C9400
+    Session-ID-ctx:
+    Master-Key: 041FF0EF642F5058E13D0F1C91DDD7CB9641D26FD909CBE691F233EBD434313341F07E1AA83673BCF8D02BE1A996A39A
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1601950134
+    Timeout   : 7200 (sec)
+    Verify return code: 20 (unable to get local issuer certificate)
+    Extended master secret: no
+---
