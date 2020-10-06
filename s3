@@ -1,0 +1,5 @@
+https://s3.console.aws.amazon.com/s3/object/wifi-ota-firmware/ota_firmware/wifi_adapter_esp32.bin?region=ap-southeast-1&tab=overview
+
+https://wifi-ota-firmware.s3-ap-southeast-1.amazonaws.com/ota_firmware/wifi_adapter_esp32.bin
+
+s3://wifi-ota-firmware/ota_firmware/wifi_adapter_esp32.bin
